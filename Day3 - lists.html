@@ -1,0 +1,54 @@
+<!doctype html>
+
+<h1> TIL that: </h1>
+<ol>
+<li> Follow good indentation practices. </li>
+<li> Keep in mind parent and children things. </li>
+<li> Break long sentences into short lines. </li>
+</ol>
+
+<html>
+	<head>
+		<title>My First Website</title>
+		<meta charset="utf-8">					<!-- The slash at the end marks a "self-closed tag". -->
+											     <!-- It is the same as <meta name="value"></meta> -->
+				    							 <!-- Use it when nothing is between. -->
+	</head>
+
+	<body>
+	- this is my list<br>					 <!-- If you don't break it, html won't break it for you. -->
+	- this is my second line<br><br>					<!-- Self close it. To keep consistancy, delete the " /" in meta as well. -->
+	- we have a blank line above<br><br>
+
+	<h1> Something I need to do. </h1>
+	<dl>					<!-- definition list -->
+		<dt> Sublime: </dt>
+		<dd> A code editor. </dd>
+
+		<p> Hi there. </p>					<!-- a <dl> only wants <dt> or <dd> as its child, so <p> won't work well. -->
+											<!-- <p> is a child of <body>, but not a child of <h1>. We'll learn it later. -->
+		<dt> Sublime: </dt>
+		<dd> A code editor. </dd>
+
+		<dt> Sublime: </dt>
+		<dd> A code editor. </dd>
+	</dl>
+
+	<ul>					<!-- unordered list -->
+		<li> Go to Walmart this Sunday </li>					<!-- Shortcuts: "Alt" + "." to close the tab. "Ctrl" + "L" to select the whole line. -->
+		<li>					<!-- See the four lines in the left. -->
+		<p> hello. </p>			<!-- If you have many elements, -->
+		<h1> HELLO. </h1>		<!-- don't put them in one line. -->
+		</li>					<!-- Separate them into several lines. -->
+		<li> Buy milk </li>
+		<li> Buy fruit </li>
+	</ul>
+
+	<ol>					<!-- ordered list -->
+		<li> Go to Walmart this Sunday </li>					<!-- "Alt" + "F3" = select all the selected words appear in the code. (multi cursors) -->
+		<li> Buy milk </li>
+		<li> Buy fruit </li>
+	</ol>
+	
+	</body>
+</html>
