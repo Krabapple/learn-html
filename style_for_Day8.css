@@ -1,0 +1,8 @@
+a {					/* find all anchor tags and change them into the new style. */
+	color: orange; text-decoration: none;				/*mind the indention.*/
+}
+
+h1 {				/* find all h1 tags and change them into the new style. */
+	font-family: helvetica, Arial, sans-serif;		/* First choose helvetica. If no helvetica, use Arial. If no Arial, use sans-serif. */
+	color: pink; text-decoration: underline;
+}
