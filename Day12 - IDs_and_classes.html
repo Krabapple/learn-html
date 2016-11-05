@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> My Webpage</title>
+	<link rel="stylesheet" href="css/style_for_day11.css">
+	<style>
+	#emphasis{
+		color: red;
+	}
+	.emphasis{
+		color: yellow;
+	}
+	li:nth-child(3){
+		color: orange;
+	}
+	</style>
+</head>
+
+<body>
+<div>
+	<h1> TIL that </h1>
+	<ol>
+		<li> IDs and classes are simple ways to assign labels to specific elements and then target them within style sheets. </li>
+		<li> You can put a &ltstyle&gt in &lthead&gt if the style thing is small and don't need to create a style sheet. </li>
+		<li> Three ways to do a small style design: </li>
+		<ul>
+			<li> Use an identifier: id=" ". Don't use a name like "third_line" in case it moves to another line later.<br>
+				(Note that we use IDs to deal with <strong>specific elements</strong>. Do not apply them to a group of elements.)
+				<li>Use classes to style groups of elements.</li>
+				(In &lthead&gt, use # for IDs and . for classes.) </li>
+				<li> Use li:nth-child. </li>
+		</ul>
+	</ol>
+
+<ul>					<!-- The first way. -->
+	<li> This </li>
+	<li> is </li>
+	<li id="emphasis"> my // note that the ID overwrites the nth-child.</li>
+	<li> list. </li>
+</ul>
+
+<ul>
+	<li class="emphasis"> This </li>
+	<li> is </li>
+	<li class="emphasis"> my </li>
+	<li> list. </li>
+</ul>
+
+<ul>
+	<li> This </li>
+	<li> is </li>
+	<li> my </li>
+	<li> list. </li>
+</ul>
+
+<p> All the thild lines become orange. If you don't want so, try to use <strong>ul: first-of-type</strong>. <br>
+ul: first-of-type li:nth-child(3){<br>
+    color: orange;<br>
+}</p>
+
+</div>
+
+
+
+</body>
+
+</html>
