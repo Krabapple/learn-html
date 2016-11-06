@@ -9,5 +9,5 @@ Some notes while learning html.
 * Alt + . = close the tag
 
 ## Note
-* Always remember to wrap <p> and </p> around if you want to write text. Text without <p> may cause error.
+* Always remember to wrap &lt;p&gt; and &lt;/p&gt; around if you want to write text. Text without &lt;p&gt; may cause error.
 * # for ID and . for class.
