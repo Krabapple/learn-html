@@ -1,0 +1,62 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet"  href="css/style_for_Day15.css">
+	<title> My Website </title>
+</head>
+
+<body>
+<div class="wrap">
+	<h1> My Website </h1>
+	<div class="content">
+		<h2> Main content heading. </h2>
+		<p> This is my blog. </p>
+		<ul><p>Two ways to create a sidebar:</p>
+			<li> Use &ltdiv class="sidebar"&gt. (Usually seen in old webpages)<br>
+			Not a good practice because div does not have semantic meanings. They are simple wrappers.</li>
+			<li> Use &ltaside&gt. </li>
+		</ul>
+
+	<h2> TIL that: </h2>
+	<ol>
+		<li> You can style multiple classes by writing them together.<br>
+			".content, aside{ ... }" </li>
+		<li> Only want to style the ul in the sidebar?<br>
+			Use "aside ul { ... }" </li>
+		<li> Using precentage to define the width of the boxes, then you can change their look by adjusting your browser. <br>
+			And don't forget to set a min-width, otherwise when the browser's width is too small, the text will go out of the box. </li>
+		<li> When we apply <strong>float</strong>, it take these elements out of the flow of the documents.</li>
+		<li> When applying background color for the wrapper, it seems that the color only reach the bottom of the title. The solutions are:
+			<ul>
+				<li> Add a footbar</li>
+				<li> Clear all the floats by using clear </li>
+				<li> Within wrap - overflow: hidden </li>
+			</ul>
+			</li>
+	</ol>
+</div>
+
+
+<aside>
+<h2> Sidebar </h2>
+<div class="side">
+<ul>
+	<li>
+		<a href="#"> Home </a>
+	</li>
+	<li>
+		<a href="#"> About </a>
+	</li>
+	<li>
+		<a href="#"> Contact </a>
+	</li>
+</ul>
+</div>
+</aside>
+
+</div>
+
+
+</body>
+
+</html>
