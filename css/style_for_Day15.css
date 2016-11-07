@@ -1,0 +1,52 @@
+/* These are all boxes. */
+
+body {
+	background-color: #d5dae2;
+}
+
+.wrap{
+	min-width: 600px;	
+	width: 80%;
+	margin: auto;
+	background: green;
+}
+
+.content, aside{						/* You can style them together. */
+	height: 600px;
+}
+
+.content{
+	background: #cfed3b;
+	float: left;
+	width: 450px;
+	padding-left: 10;
+	padding-right: 10;
+}
+
+aside{
+	background: #828478;
+	float: left;
+	width: 20%;
+}
+
+
+.side {
+	color: orange;
+	decoration: none;
+}
+
+aside ul{								/* It means "the ul within the aside". */
+	padding-left: 10;
+	list-style: none;
+}
+
+aside a{
+	color: white;
+	text-decoration: none;
+}
+
+aside h2{
+	padding-left: 10;
+	padding-right: 10;
+	color: white;
+}
