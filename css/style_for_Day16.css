@@ -1,0 +1,19 @@
+body{
+	font-family: sans-serif;
+}
+
+ul li{
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+ul a{
+	color: fuchsia;
+	text-decoration: none;
+}
+
+ul a:hover{
+	text-decoration: underline;
+	color: green;
+}
