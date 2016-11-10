@@ -1,0 +1,64 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/style_for_Day17.css">
+
+</head>
+
+<body>
+
+<h1> TIL that: </h1>
+	<ol>
+		<li> &ltinput&gt can be used to describe a text box, a submit button, a check box, a radio button etc. </li>
+		<li> Use value inside the input tag to change the name of the button. </li>
+		<li> Use &ltlabel&gt to tell the user what to enter. </li>
+		<li> To associate the label with the input box, use for="" and ID.<br>
+		(And then if you click the label, the input box will become active.) </li>
+		<li> Use unordered list tag to wrap the boxes to let them look nicer.<br>
+		Don't use &ltp&gt since &ltinput&gt and &ltlabel&gt are not its childern. </li>
+		<li> If you want to set the width and length for the comment box, you can use col and row, but it is not a good practice.<br>
+		Style them in CSS instead. </li>
+		<li> Make the form method "get" and the information will go through the url.<br>
+			Then if you click submit, notice the url:<br>
+			? for name and & separate the names. </li>
+		<li>If the checkbox is checked, then we have a "on" in the url.<br>
+			If the checkbox is not checked, nothing will be sent through the url. (No off only on) </li>
+		<li> You can not uncheck the radio button. </li>
+
+	</ol>
+
+<form action="" method="post">
+	<ul>
+		<li>
+			<label for="name" name="name"> Enter your name: </label>
+			<input id="name" />
+		</li>
+
+		<li>
+			<label for="comment" name="comment"> Enter your comment: </label>
+			<textarea id="comment"></textarea>
+		</li>
+
+		<li>
+			<label for="css"> Do you like CSS? </label>
+		</li>
+	
+		<li>
+			<input type="checkbox" name="css" id="css"></li>
+		</li>
+
+		<li>
+			<label for="language"> Favorite language: </label>
+			<input type="radio" /> CSS <br>
+			<input type="radio" /> JavaScript <br>
+			<input type="radio" /> Ruby
+		</li>
+
+		<li>
+			<input type="submit" value="Go!" />
+		</li>
+	</ul>
+</form>
+
+</body>
+</html>
