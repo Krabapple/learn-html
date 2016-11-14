@@ -1,0 +1,7 @@
+.logo {
+	background: url(../img/osi_symbol.png) no-repeat;				/* Don't forget the periods since css and img are two different folders. */
+	text-indent: -9999px; 					/* Make sure it will not be displayed on the webpage. */
+	width: 628px;
+	height: 608px;
+
+}
