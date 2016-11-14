@@ -1,0 +1,37 @@
+body {
+	background-color: #666;
+}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	margin-top: 120px;
+	font-family:'Indie Flower', cursive;
+	letter-spacing: 20px;
+	text-transform: uppercase;
+	text-shadow:3px 3px 10px navy;
+}
+
+.squeeze {
+	letter-spacing: -1.5px;
+}
+
+.ex {
+	text-shadow: 0 1px 0 white;
+}
+
+.mul-ex {
+	text-shadow: -3px -3px 10px blue,
+				 3px 3px 10px red,
+				 0 1px 0 white;
+}
+
+.fire {
+	font-family: 'Permanent Marker', cursive;
+	text-shadow: 0 -3px 5px #ff0000,
+			     1px -6px 7px #ff4800,
+			     1px -9px 9px #ff6100,
+			     2px -12px 15px #ff7b00,
+			     2px -15px 20px #ff9400,
+			     3px -18px 25px #ffc300;
+}
