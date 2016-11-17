@@ -1,0 +1,76 @@
+.box-r {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	background: red;
+	position: relative;
+	top: 200px;
+	left: 100px;
+}
+
+.box-a {
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	background: blue;
+	position: absolute;
+	top: 10px;
+	left: 1000px;
+}
+
+
+
+.box-r {
+	text-align: center;
+	padding-top: 50px;
+}
+
+
+.box-a p {
+	text-align: center;
+}
+
+.wrap {
+	width: 800px;
+	height: 1000px;
+	position: absolute;
+	left: 100px;
+	top: 600px;
+	margin: auto;
+	background: #e3e3e3;
+}
+
+.box-in-r {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	background: red;
+	position: relative;
+	top: 200px;
+	left: 100px;
+}
+
+.box-in-a {
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	background: blue;
+	position: absolute;
+	top: 200px;
+	left: 100px;
+}
+
+.box-in-pink {
+	width: 70px;
+	height: 70px;
+	margin: auto;
+	background: pink;
+	position: absolute;
+	top: 200px;
+	left: -35px;
+}
+
+.box-text {
+	text-align: center;
+	padding-top: 500px;
+}
