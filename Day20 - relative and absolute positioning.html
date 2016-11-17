@@ -2,25 +2,38 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="css/style_for_Day20.css">
-
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 </head>
 
 <body>
 
 <h1> TIL that: </h1>
 	<ol>
-		<li> Write "position: relative;" in your CSS and set the top, left, right, bottom margin value for the box. </li>
-		<li> Top = push down. Bottom = push up. Right = push left. Left = push right. </li>
-		<li> Negative letter spacing will push the letters together.<br>
-			<div class="squeeze"> Avoid using it in &ltp&gt because it looks awful</div></li>
-		<li> text-shadow consumes four values:<br>
-			x-axis y-axis blur color.</li>
-		<li> "text-shadow 0 1px 0 color" gives an effect of outline. <br>
-		<h2 class="ex"> Like that. </h2><br>
-		And you can use multiple set of values<br>
-		<h2 class="mul-ex"> Like that. Separate each set of values with a comma.</h2></li>
-		<li> USE GOOGLE APIs! Copy the link, link to it above the custom CSS file (to overwrite it), and set it in the CSS file. See for details in the CSS file and html file. </li>
+		<li> Write "position: relative;" in your CSS and set the top, left, right, bottom margin value for the box.<br>
+			In "position: relative;" mood, top = push down, bottom = push up, right = push left, left = push right.<br>
+			We have the <font color="red">red</font> box as an example of "position: relative;". </li>
+		<li> However "position: absolute;" does a quite different thing.<br>
+			It starts from the upper-left corner of the browser, and instead of "pushing", it "locates" the box.<br>
+			We have the <font color="blue">blue</font> box as an example of "position: absolute;". </li>
+		<li> All the locations are related to the nearest parent. </li>
+		<li> See the blue box inside the wrap:<br>
+			100px is no longer 100px from the left of the browser window, but 100px from the wrap.<br>
+			But if we remove the "position: absolute;" from the CSS of wrap, the nearest parent of the blue box will become body, or the browser window, and the box will be located in the bigger wrap, that is, the body.</li>
+		<li> Use absolute positioning when you want some little thing exceeds the boundary of the container.<br>
+			(like the pink box and red heart on the left side of the wrap)</li>
+		<li><h2> In summary:<br>
+			A relative positioning gives us the ability to specify top, left, right and bottom values.
+			A absolute positioning locates the point not relatively, but straight forward. (How to make it clear? Just try to understand it...)</h2>		
 	</ol>
-	<div class="box"></div>
+	<div class="box-r"><p>relative<br>width: 100px<br>height: 100px<br>top: 200px<br>left: 100px</p></div>
+
+	<div class="box-a"><p>absolute<br>width: 200px<br>height: 200px<br>top: 10px<br>left: 1000px</p></div>
+
+	<div class="wrap">
+		<div class="box-in-r"><p>relative<br>width: 100px<br>height: 100px<br>top: 200px<br>left: 100px</p></div>
+		<div class="box-in-a"><p>absolute<br>width: 200px<br>height: 200px<br>top: 200px<br>left: 100px</p></div>
+		<div class="box-in-pink"><h1 style="text-align: center; color: red;">&hearts;</h1></div>
+		<p class="box-text">absolute<br>width: 800px<br>height: 1000px<br>top: 600px<br>left: 100px</p>
+	</div>
 </body>
 </html>
