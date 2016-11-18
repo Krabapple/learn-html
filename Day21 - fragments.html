@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/style_for_Day21.css">
+</head>
+
+<body>
+
+<h1> TIL that: </h1>
+	<ol>
+		<li> Do the markup first. Consider the CSS later. Don't think of them at the same time. </li>
+		<li> When styling, first style the wrapper.<br>
+			In this case we don't have a wrapper, so style &ltbody&gt. </li>
+		<li> "margin: 20px auto;" means 20px margin on the top and bottom and auto on left and right.</li>
+		<li>
+			Syntax: "margin: top right bottom left"<br>
+			"margin: 20px 0 20px 0;" = "margin: 20px 0" = 20 for top/bottom and 0 for left/right<br>
+			"margin: 20px 5px 10px;" = "margin: 20px 5px 10px 5px;"
+		</li>
+		<li> &ltdiv&gt has no semantic meaning.</li>
+		<li> Line height 1em = the height of a letter m.</li>
+		<li> Check the CSS and see how we deal with ".meta xxx:after". </li>
+		<li> Again, why use class not ID? Because we will repeat them over and over again in the blog, so we need to group them, instead of dealing with them one by one. </li>
+		<li> While styling in CSS, if we define something twice, we will always override anything above - that's how CSS works. <br>
+			The lower it lies in the page, the more likely it will take precedence. <br>
+			However if we have "post_info a" at the top and "a" at the bottom, "post_info" takes precedence because it has more "weight", or more specific. </li>
+		<li> Shrink the box by floating it to the left. </li>
+		<li><h2> Don't be more specific than you need to be. </h2></li>
+	</ol>
+
+
+<a href="#"><img src="img/article.png" alt="20 JavaScript Frameworks Worth Checking Out" /></a>
+
+
+<div class="preview">
+	<article>
+		<ul class="meta">
+			<li><a href="#"> Articles </a></li>
+			<li><a href="#"> Web Roundups </a></li>
+		</ul>
+		<h2> 20 JavaScript Frameworks Worth Checking Out </h2>
+		<p class="post_info"><a href="#">Siddhart</a> on Sep 23rd 2011 with <a href="#">44 comments</a></p>
+
+		<div class="body">
+			<p>
+				My first paragraph. My first paragraph. My first paragraph. My first paragraph. My first paragraph. My first paragraph. My first paragraph. My first paragraph. My first paragraph. My first paragraph.
+			</p>
+
+			<p>
+				My second paragraph. My second paragraph. My second paragraph. My second paragraph. My second paragraph. My second paragraph. My second paragraph. My second paragraph. My second paragraph. My second paragraph.
+			</p>
+
+			<a href="#" class="continue">Continue</a>
+
+		</div>
+	</article>
+</div>
+
+</body>
+</html>
