@@ -1,0 +1,105 @@
+body {
+	width: 700px;
+	margin: 20px auto;
+	font-family: sans-serif;
+}
+
+a {
+	color: #296056;
+	font-size: 14px;
+}
+
+a:hover {
+	color: black;
+}
+
+.preview {
+	float: right;
+	width: 400px;
+}
+
+article img{
+	float: left;
+	margin-right: 30px;
+}
+
+article h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 39px;
+	line-height: 43px;
+	letter-spacing: -1px;
+}
+
+article .continue {
+	float: right;
+}
+
+article .continue:before {
+	content: '(';
+}
+
+article .continue:after {
+	content: ')';
+}
+
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.meta {
+	padding-left: 0;
+	margin: 0 0 10px;
+}
+
+
+.meta a {
+	font-style: italic;
+	font-size: 14px;
+	color: green;
+}
+
+.meta a:hover {
+	color: black;
+}
+
+.meta li:after {
+	content: '\\';		/* Double \. The first \ means to excape the second \ and don't treat it as something else.*/
+	padding: 0 2px;
+	color: #999;
+}
+
+.meta li:last-child:after {			/* To remove the last backslash. */
+	content:none;
+}
+
+.meta li {
+	display: inline;
+}
+
+
+.post_info {
+	background: #f3f3f3;
+	color: #999;
+	padding: 2px;
+	float: left;
+	font-size: 14px;
+}
+
+.post_info a {
+	color: #999;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.post_info a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.body {
+	clear: both;
+	color: #5757;
+}
