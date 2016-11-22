@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> My Website </title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/960_12_col.css">
+	<link rel="stylesheet" href="css/text.css">
+	<link rel="stylesheet" href="css/style_for_Day25.css">
+</head>
+<body>
+	<h1> TIL that:</h1>
+	<ul>
+		<li> Type "doc" and hit Tab will generate a html default template for you! No more annoying typing! </li>
+		<li> Use grid 12 or grid 16 for your webpage. </li>
+		<li> When linking to CSS, it's better to put several CSSs' content into one CSS file and link to it. </li>
+		<li> div.wrap>header>h1{My Website}+nav>ul>li*3>a[href=#] </li>
+		<li> 960 framework is specially made for the webpages that have a width of 960. </li>
+		<li> Put grid in a class (not an ID). Multiple classes and be separated by spaces. </li>
+		<li> 960 framework provides a class of clearfix</li>
+		<li> Use alpha and omega to set the margin for the first and the last column.<br>
+		alpha = left margin zero for the first column<br>
+		omega = right margin zero for the last column</li>
+		<li>Padding is applied in addition to the width in the newer version. However you can override it by setting border-box, and the padding will be pushed inside the box and the width of the box will remain the same - padding is reduced from the width.</li>
+	</ul>
+
+	<div class="wrap container_12">
+		<header class="clearfix">
+			<h1 class="grid_8">My Website</h1>
+			<nav class="grid_4">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+	<div class="main clearfix">
+		<div class="primary grid_8">
+		<section class="grid_2 alpha">
+			<h4>This is title</h4>
+			<p>
+			My content goes here. My content goes here. My content goes here. My content goes here. My content goes here. My content goes here.
+			</p>
+		</section>
+		<section class="grid_2">
+			<h4>This is title</h4>
+			<p>
+			My content goes here. My content goes here. My content goes here. My content goes here. My content goes here. My content goes here.
+			</p>
+		</section>
+		<section class="grid_2">
+			<h4>This is title</h4>
+			<p>
+			My content goes here. My content goes here. My content goes here. My content goes here. My content goes here. My content goes here.
+			</p>
+		</section>
+		<section class="grid_2 omega">
+			<h4>This is title</h4>
+			<p>
+			My content goes here. My content goes here. My content goes here. My content goes here. My content goes here. My content goes here.
+			</p>
+		</section>
+				<section class="grid_2 alpha">
+			<h4>This is title</h4>
+			<p>
+			My content goes here. My content goes here. My content goes here. My content goes here. My content goes here. My content goes here.
+			</p>
+		</section>
+		<section class="grid_2">
+			<h4>This is title</h4>
+			<p>
+			My content goes here. My content goes here. My content goes here. My content goes here. My content goes here. My content goes here.
+			</p>
+		</section>
+		<section class="grid_2">
+			<h4>This is title</h4>
+			<p>
+			My content goes here. My content goes here. My content goes here. My content goes here. My content goes here. My content goes here.
+			</p>
+		</section>
+		<section class="grid_2 omega">
+			<h4>This is title</h4>
+			<p>
+			My content goes here. My content goes here. My content goes here. My content goes here. My content goes here. My content goes here.
+			</p>
+		</section>
+				<section class="grid_2 alpha">
+			<h4>This is title</h4>
+			<p>
+			My content goes here. My content goes here. My content goes here. My content goes here. My content goes here. My content goes here.
+			</p>
+		</section>
+		<section class="grid_2">
+			<h4>This is title</h4>
+			<p>
+			My content goes here. My content goes here. My content goes here. My content goes here. My content goes here. My content goes here.
+			</p>
+		</section>
+		<section class="grid_2">
+			<h4>This is title</h4>
+			<p>
+			My content goes here. My content goes here. My content goes here. My content goes here. My content goes here. My content goes here.
+			</p>
+		</section>
+		<section class="grid_2 omega">
+			<h4>This is title</h4>
+			<p>
+			My content goes here. My content goes here. My content goes here. My content goes here. My content goes here. My content goes here.
+			</p>
+		</section>
+		</div>
+	<aside class="grid_4">
+		<ul>
+			<li>Item</li>
+			<li>Item</li>
+			<li>Item</li>
+			<li>Item</li>
+			<li>Item</li>
+			<li>Item</li>
+		</ul>
+	</aside>
+	</div>
+	</div>
+
+</body>
+</html>
