@@ -1,0 +1,10 @@
+.banner {
+	width: 640px;
+	height: 340px;
+	background: url(../img/city-bg.jpg) no-repeat;
+}
+
+header h1 {
+	background: url(../ing/logo.png) no-repeat;
+	text-indent: -99999px   <!-- just push the text outside the webpage. -->
+}
